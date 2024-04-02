@@ -1,0 +1,13 @@
+/* table css */
+.table td,
+.table th {
+    vertical-align: middle;
+}
+
+.table .stretch td {
+    width: 100%;
+}
+
+.btn {
+    white-space: nowrap;
+}
