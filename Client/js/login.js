@@ -15,6 +15,10 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
         .then(response => response.json())
         .then(data => {
             if (data.redirect) {
+                // Save user details in sessionStorage
+                sessionStorage.setItem('userId', data.userId);
+                sessionStorage.setItem('username', data.username);
+                sessionStorage.setItem('email', data.email);
                 // Redirect to the todos page if login is successful
                 window.location.href = data.redirect;
             }

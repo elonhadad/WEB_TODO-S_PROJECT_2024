@@ -88,12 +88,18 @@ app.post('/login', async (req, res) => {
         if (!isValidPassword) {
             return res.status(400).json({ message: 'Invalid password.' });
         }
-        // Save user details in the session
-        req.session.userId = user._id;
+        // Save user details in the session - assuming you still want to use session for other purposes
+        req.session.userId = user._id; // or user.id depending on your schema
         req.session.username = user.username;
         req.session.email = user.email;
 
-        res.json({ redirect: '/todos' });
+        // Now send all user details and redirect information in one response
+        res.json({
+            redirect: '/todos',
+            userId: user._id, // Adjust according to your needs
+            username: user.username,
+            email: user.email
+        });
     } catch (error) {
         console.error(error);
         res.status(500).json({ message: 'An error occurred during login.' });
