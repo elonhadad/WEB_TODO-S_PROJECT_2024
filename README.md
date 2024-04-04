@@ -1,5 +1,5 @@
-# WEB_TODO-S_PROJECT_2024
-final project for WEB course
+final project for WEB course:
+-------------------------
 
 #1 student: Elon Hadad 034672139
 #2 student: Rotem Elimelech 313284606
