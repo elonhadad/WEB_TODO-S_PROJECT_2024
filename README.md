@@ -1,4 +1,4 @@
-final project for WEB course:
+Final project for WEB course:
 -------------------------
 
 #1 student: Elon Hadad 034672139
