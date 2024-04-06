@@ -1,8 +1,8 @@
 Final project for WEB course:
 -------------------------
 
-#1 student: Elon Hadad 034672139
-#2 student: Rotem Elimelech 313284606
+#1 student: Elon Hadad
+#2 student: Rotem Elimelech
 
 Clone project and run instructions:
 
